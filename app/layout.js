@@ -6,6 +6,8 @@ import TwSizeIndicator from "@layouts/components/TwSizeIndicator";
 import Footer from "@layouts/partials/Footer";
 import Header from "@layouts/partials/Header";
 import "../styles/style.scss";
+import "swiper/css";
+import "swiper/css/pagination";
 
 export default function RootLayout({ children }) {
   // import google font css

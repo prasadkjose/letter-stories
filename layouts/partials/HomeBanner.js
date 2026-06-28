@@ -6,7 +6,7 @@ import { gsap } from "@lib/gsap";
 import { markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
 import { useEffect } from "react";
-import { Autoplay } from "swiper";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const HomeBanner = ({ banner: bannerData, brands }) => {
@@ -21,13 +21,13 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
       tl.fromTo(
         ".banner-title",
         { y: 20, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.5, delay: 0.5 }
+        { y: 0, opacity: 1, duration: 0.5, delay: 0.5 },
       )
         .fromTo(
           ".banner-btn",
           { y: 20, opacity: 0 },
           { y: 0, opacity: 1, duration: 0.5 },
-          ">-0.4"
+          ">-0.4",
         )
         .fromTo(
           ".banner-img",
@@ -40,7 +40,7 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
             opacity: 1,
             duration: 0.5,
           },
-          ">-.5"
+          ">-.5",
         );
 
       //parallax banner
@@ -62,7 +62,7 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
           },
           {
             y: -position,
-          }
+          },
         )
         .fromTo(
           bannerContent,
@@ -72,7 +72,7 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
           {
             y: position,
           },
-          "<"
+          "<",
         )
         .fromTo(
           ".banner-bg .circle",
@@ -82,7 +82,7 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
           {
             y: position,
           },
-          "<"
+          "<",
         );
     });
 
@@ -157,7 +157,7 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
                   {markdownify(
                     bannerData.title,
                     "h1",
-                    "mb-8 banner-title opacity-0"
+                    "mb-8 banner-title opacity-0",
                   )}
                   <div className="banner-btn opacity-0">
                     <Link
@@ -197,19 +197,17 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
               >
                 {brands.map((brand, index) => (
                   <SwiperSlide
-                    className=" h-20 cursor-pointer px-6 py-6 grayscale  transition hover:grayscale-0 lg:px-10"
+                    className="h-20 cursor-pointer px-6 py-6 grayscale transition hover:grayscale-0 lg:px-10 flex justify-center items-center"
                     key={"brand-" + index}
                   >
-                    <div className="relative h-full">
-                      <ImageFallback
-                        className="object-contain"
-                        src={brand}
-                        sizes="100vw"
-                        alt=""
-                        fill={true}
-                        priority={true}
-                      />
-                    </div>
+                    <ImageFallback
+                      className="h-[32px] w-auto object-contain"
+                      src={brand}
+                      width={160}
+                      height={32}
+                      alt=""
+                      priority={true}
+                    />
                   </SwiperSlide>
                 ))}
               </Swiper>
