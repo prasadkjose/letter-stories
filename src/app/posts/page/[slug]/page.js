@@ -9,7 +9,7 @@ import Post from "@partials/Post";
 const { blog_folder } = config.settings;
 
 // blog pagination
-const BlogPagination = async (props) => {
+const BlogPagination = async props => {
   const params = await props.params;
   //
   const currentPage = parseInt((params && params.slug) || 1);
@@ -54,7 +54,7 @@ export default BlogPagination;
 
 export async function generateStaticParams() {
   const getAllSlug = await getSinglePage(`src/content/${blog_folder}`);
-  const allSlug = getAllSlug.map((item) => item.slug);
+  const allSlug = getAllSlug.map(item => item.slug);
   const { pagination } = config.settings;
   const totalPages = Math.ceil(allSlug.length / pagination);
   let paths = [];

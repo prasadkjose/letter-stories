@@ -23,7 +23,7 @@ const Banner = ({ title }) => {
           y: 0,
           opacity: 1,
           duration: 0.5,
-        },
+        }
       ).fromTo(
         ".breadcrumb",
         {
@@ -34,7 +34,7 @@ const Banner = ({ title }) => {
           opacity: 1,
           duration: 0.5,
         },
-        ">-.3",
+        ">-.3"
       );
       //parallax banner
       const parallaxTl = gsap.timeline({
@@ -56,7 +56,7 @@ const Banner = ({ title }) => {
         {
           y: position,
         },
-        "<",
+        "<"
       );
     }, banner);
 

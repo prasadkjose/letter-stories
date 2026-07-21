@@ -25,7 +25,7 @@ const Features = ({ features }) => {
               dynamicBullets: true,
             }}
             // autoplay={{ delay: 3000 }}
-            onBeforeInit={(swiper) => {
+            onBeforeInit={swiper => {
               swiper.params.pagination.el = paginationRef.current;
             }}
             modules={[Pagination]}

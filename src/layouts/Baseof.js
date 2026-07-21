@@ -26,7 +26,7 @@ const Base = ({
     const ctx = gsap.context(() => {
       //fade
       const fadeElements = document.querySelectorAll(".fade");
-      fadeElements.forEach((el) => {
+      fadeElements.forEach(el => {
         gsap.to(el, {
           opacity: 1,
           scrollTrigger: el,
@@ -36,7 +36,7 @@ const Base = ({
 
       //gsap animation
       const elements = document.querySelectorAll(".animate");
-      elements.forEach((el) => {
+      elements.forEach(el => {
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: el,
@@ -65,7 +65,7 @@ const Base = ({
 
       //background animation
       const animatedBgs = document.querySelectorAll(".bg-theme");
-      animatedBgs.forEach((bg) => {
+      animatedBgs.forEach(bg => {
         gsap.to(bg, {
           scrollTrigger: {
             trigger: bg,
@@ -85,7 +85,7 @@ const Base = ({
         {/* title */}
         <title>
           {plainify(
-            meta_title ? meta_title : title ? title : config.site.title,
+            meta_title ? meta_title : title ? title : config.site.title
           )}
         </title>
 
@@ -108,7 +108,7 @@ const Base = ({
         <meta
           property="og:title"
           content={plainify(
-            meta_title ? meta_title : title ? title : config.site.title,
+            meta_title ? meta_title : title ? title : config.site.title
           )}
         />
 
@@ -127,7 +127,7 @@ const Base = ({
         <meta
           name="twitter:title"
           content={plainify(
-            meta_title ? meta_title : title ? title : config.site.title,
+            meta_title ? meta_title : title ? title : config.site.title
           )}
         />
 

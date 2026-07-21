@@ -4,7 +4,7 @@ import { slugify } from "@lib/utils/textConverter";
 // get all taxonomies from frontmatter
 export const getTaxonomy = (folder, name) => {
   const singlePages = getSinglePage(folder);
-  const taxonomyPages = singlePages.map((page) => page.frontmatter[name]);
+  const taxonomyPages = singlePages.map(page => page.frontmatter[name]);
   let taxonomies = [];
   for (let i = 0; i < taxonomyPages.length; i++) {
     const categoryArray = taxonomyPages[i];

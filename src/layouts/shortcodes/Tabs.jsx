@@ -10,9 +10,9 @@ function Tabs({ children }) {
   const handleChangTab = (event, index) => {
     const tabLinks = [...event.currentTarget.parentElement.children];
     const items = [...tabItemsRef.current.children];
-    const activeItem = items.find((item) => !item.classList.contains("hidden"));
-    const activeTabLink = tabLinks.find((item) =>
-      item.classList.contains("active-tab"),
+    const activeItem = items.find(item => !item.classList.contains("hidden"));
+    const activeTabLink = tabLinks.find(item =>
+      item.classList.contains("active-tab")
     );
     if (activeItem === items[index]) return;
     activeTabLink.classList.remove("active-tab");
@@ -36,7 +36,7 @@ function Tabs({ children }) {
             className={`m-0 cursor-pointer rounded-xl px-8 py-3 font-semibold text-text-dark ${
               index === 0 && "active-tab"
             }`}
-            onClick={(e) => handleChangTab(e, index)}
+            onClick={e => handleChangTab(e, index)}
           >
             {item.props.name}
           </li>

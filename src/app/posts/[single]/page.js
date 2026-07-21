@@ -6,12 +6,12 @@ import { sortByDate } from "@lib/utils/sortFunctions";
 const { blog_folder } = config.settings;
 
 // post single layout
-const Article = async (props) => {
+const Article = async props => {
   const params = await props.params;
   const { single } = params;
   const posts = await getSinglePage(`src/content/${blog_folder}`);
-  const post = posts.filter((p) => p.slug == single);
-  const recentPosts = sortByDate(posts).filter((post) => post.slug !== single);
+  const post = posts.filter(p => p.slug == single);
+  const recentPosts = sortByDate(posts).filter(post => post.slug !== single);
   const { frontmatter, content } = post[0];
 
   return (
@@ -28,7 +28,7 @@ const Article = async (props) => {
 // get post single slug
 export async function generateStaticParams() {
   const allSlug = await getSinglePage(`src/content/${blog_folder}`);
-  return allSlug.map((item) => ({
+  return allSlug.map(item => ({
     single: item.slug,
   }));
 }

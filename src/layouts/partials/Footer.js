@@ -29,7 +29,7 @@ const Footer = () => {
             <h3 className="h5">Quick Links</h3>
             {/* footer menu */}
             <ul className="mt-5 leading-10">
-              {menu.footer.map((menu) => (
+              {menu.footer.map(menu => (
                 <li key={menu.name}>
                   <Link
                     href={menu.url}

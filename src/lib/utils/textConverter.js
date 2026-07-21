@@ -2,7 +2,7 @@ import { slug } from "github-slugger";
 import { marked } from "marked";
 
 // slugify
-export const slugify = (content) => {
+export const slugify = content => {
   if (!content) return null;
 
   return slug(content);
@@ -25,7 +25,7 @@ export const markdownify = (content, tag, className) => {
 };
 
 // humanize
-export const humanize = (content) => {
+export const humanize = content => {
   if (!content) return null;
 
   return content
@@ -37,7 +37,7 @@ export const humanize = (content) => {
 };
 
 // plainify
-export const plainify = (content) => {
+export const plainify = content => {
   if (!content) return null;
 
   const mdParsed = marked.parseInline(String(content));
@@ -48,7 +48,7 @@ export const plainify = (content) => {
 };
 
 // strip entities for plainify
-const htmlEntityDecoder = (htmlWithEntities) => {
+const htmlEntityDecoder = htmlWithEntities => {
   let entityList = {
     "&nbsp;": " ",
     "&lt;": "<",
@@ -59,9 +59,9 @@ const htmlEntityDecoder = (htmlWithEntities) => {
   };
   let htmlWithoutEntities = htmlWithEntities.replace(
     /(&amp;|&lt;|&gt;|&quot;|&#39;)/g,
-    (entity) => {
+    entity => {
       return entityList[entity];
-    },
+    }
   );
   return htmlWithoutEntities;
 };

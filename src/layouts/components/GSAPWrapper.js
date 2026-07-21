@@ -12,7 +12,7 @@ const GSAPWrapper = ({ children }) => {
     const ctx = gsap.context(() => {
       //fade
       const fadeElements = document.querySelectorAll(".fade");
-      fadeElements.forEach((el) => {
+      fadeElements.forEach(el => {
         gsap.to(el, {
           opacity: 1,
           scrollTrigger: el,
@@ -22,7 +22,7 @@ const GSAPWrapper = ({ children }) => {
 
       //gsap animation
       const elements = document.querySelectorAll(".animate");
-      elements.forEach((el) => {
+      elements.forEach(el => {
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: el,
@@ -51,7 +51,7 @@ const GSAPWrapper = ({ children }) => {
 
       //background animation
       const animatedBgs = document.querySelectorAll(".bg-theme");
-      animatedBgs.forEach((bg) => {
+      animatedBgs.forEach(bg => {
         gsap.to(bg, {
           scrollTrigger: {
             trigger: bg,

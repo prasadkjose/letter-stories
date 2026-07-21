@@ -1,11 +1,11 @@
 // content reading
-const readingTime = (content) => {
+const readingTime = content => {
   const WPS = 275 / 60;
 
   let images = 0;
   const regex = /\w/;
 
-  let words = content.split(" ").filter((word) => {
+  let words = content.split(" ").filter(word => {
     if (word.includes("<img")) {
       images += 1;
     }

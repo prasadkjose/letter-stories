@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import path from "path";
 
 // get list page data, ex: _index.md
-export const getListPage = async (filePath) => {
+export const getListPage = async filePath => {
   const pageData = fs.readFileSync(filePath, "utf-8");
   const pageDataParsed = matter(pageData);
   const notFoundPage = fs.readFileSync("src/content/404.md", "utf-8");
@@ -28,13 +28,11 @@ export const getListPage = async (filePath) => {
 };
 
 // get all single pages, ex: blog/post.md
-export const getSinglePage = (folder) => {
+export const getSinglePage = folder => {
   const filesPath = fs.readdirSync(folder);
-  const sanitizeFiles = filesPath.filter((file) => file.includes(".md"));
-  const filterSingleFiles = sanitizeFiles.filter((file) =>
-    file.match(/^(?!_)/),
-  );
-  const singlePages = filterSingleFiles.map((filename) => {
+  const sanitizeFiles = filesPath.filter(file => file.includes(".md"));
+  const filterSingleFiles = sanitizeFiles.filter(file => file.match(/^(?!_)/));
+  const singlePages = filterSingleFiles.map(filename => {
     const slug = filename.replace(".md", "");
     const pageData = fs.readFileSync(path.join(folder, filename), "utf-8");
     const pageDataParsed = matter(pageData);
@@ -46,20 +44,19 @@ export const getSinglePage = (folder) => {
   });
 
   const publishedPages = singlePages.filter(
-    (page) =>
-      !page.frontmatter.draft && page.frontmatter.layout !== "404" && page,
+    page => !page.frontmatter.draft && page.frontmatter.layout !== "404" && page
   );
   const filterByDate = publishedPages.filter(
-    (page) => new Date(page.frontmatter.date || new Date()) <= new Date(),
+    page => new Date(page.frontmatter.date || new Date()) <= new Date()
   );
 
   return filterByDate;
 };
 
 // get a regular page data from many pages, ex: about.md
-export const getRegularPage = async (slug) => {
+export const getRegularPage = async slug => {
   const publishedPages = getSinglePage("src/content");
-  const pageData = publishedPages.filter((data) => data.slug === slug);
+  const pageData = publishedPages.filter(data => data.slug === slug);
   const notFoundPage = fs.readFileSync("src/content/404.md", "utf-8");
   const notFoundDataParsed = matter(notFoundPage);
 
