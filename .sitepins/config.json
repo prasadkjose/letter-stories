@@ -4,7 +4,5 @@
   "code": "layouts",
   "arrangement": [],
   "public": "public",
-  "configs": [
-    "config"
-  ]
+  "configs": ["config"]
 }

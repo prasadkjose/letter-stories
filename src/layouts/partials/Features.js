@@ -21,7 +21,6 @@ const Features = ({ features }) => {
             slidesPerView={1}
             pagination={{
               type: "bullets",
-              el: paginationRef.current,
               clickable: true,
               dynamicBullets: true,
             }}

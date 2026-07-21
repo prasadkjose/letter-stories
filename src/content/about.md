@@ -54,7 +54,6 @@ clients:
     - /images/brands/05-colored.png
     - /images/brands/06-colored.png
 
-
 ## members
 our_member:
   subtitle: OUR MEMBERS
@@ -83,12 +82,10 @@ our_office:
     - flag: /images/about/flags/au.png
       name: Australia, Perth
       location: Flat 23 80 Anthony Circlet Port Guiseppe, TAS 2691
-    - flag:  /images/about/flags/germany.png
+    - flag: /images/about/flags/germany.png
       name: Berlin, Germany
       location: Jl Raya Dewi Sartika Ged Harapan Masa, Br Germeny
-    - flag:  /images/about/flags/china.png
+    - flag: /images/about/flags/china.png
       name: China, Wohan
       location: 1hao Wen Ti Huo Dong Zhong Xin 1ceng Jian Xing
-
 ---
-

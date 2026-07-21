@@ -19,8 +19,8 @@
 
 ![andromeda-light](https://assets.teamosis.com/thumbs/andromeda-light.png)
 
-
 ## 🔑Key Features
+
 - 📄 7+ Pre-Designed Pages
 - 🚀 Google Page Speed score 100! (Desktop)
 - 🎨 Tailwind CSS
@@ -39,6 +39,7 @@
 - ✏️ MDX Support with many built-in custom components
 
 ## 📄 7+ Pre-Designed Pages
+
 - 🏠 Home Page
 - ℹ️ About Page
 - 📞 Contact Page
@@ -47,8 +48,8 @@
 - 📚 Blog Page
 - 📝 Blog Single Page
 
-
 <!-- installation -->
+
 ## ⚙️Installation
 
 After downloading the template, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
@@ -96,7 +97,7 @@ Click the Edit with Sitepins button below and follow the on-screen instructions 
   <a target="_blank" href="https://app.sitepins.com/new/clone?name=Andromeda%20Light%20Nextjs&repository=https://github.com/themefisher/andromeda-light-nextjs/?aff=tfgithub">
     <img src="https://sitepins.com/button.svg" alt="Edit with Sitepins">
   </a>
-  
+
 <!-- reporting issue -->
 
 ## 🐞Reporting Issues
@@ -105,11 +106,13 @@ We use GitHub Issues as the official bug tracker for this Template. Please Searc
 If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/andromeda-light-nextjs/issues).
 
 <!-- support -->
+
 ## 💬Technical Support or Questions (Paid)
 
 If you have questions or need help integrating the product please [contact us](https://themefisher.com/contact) instead of opening an issue.
 
 <!-- licence -->
+
 ## 📄License
 
 Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)

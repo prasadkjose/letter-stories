@@ -7,7 +7,7 @@ import SeoMeta from "@layouts/partials/SeoMeta";
 import { getRegularPage, getSinglePage } from "@lib/contentParser";
 
 // for all regular pages
-const RegularPages = async props => {
+const RegularPages = async (props) => {
   const params = await props.params;
   const { regular } = params;
   const pageData = await getRegularPage(regular);

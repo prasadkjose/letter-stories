@@ -16,13 +16,13 @@ const similerItems = (currentItem, allItems, slug) => {
   // filter by categories
   const filterByCategories = allItems.filter((item) =>
     categories.find((category) =>
-      item.frontmatter.categories.includes(category)
-    )
+      item.frontmatter.categories.includes(category),
+    ),
   );
 
   // filter by tags
   const filterByTags = allItems.filter((item) =>
-    tags.find((tag) => item.frontmatter.tags.includes(tag))
+    tags.find((tag) => item.frontmatter.tags.includes(tag)),
   );
 
   // merged after filter

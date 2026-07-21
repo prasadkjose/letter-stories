@@ -1,15 +1,15 @@
 "use client";
 /* eslint-disable jsx-a11y/alt-text */
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const ImageFallback = (props) => {
   const { src, fallback, ...rest } = props;
   const [imgSrc, setImgSrc] = useState(src);
 
-  useEffect(() => {
-    setImgSrc(src);
-  }, [src]);
+  // useEffect(() => {
+  //   setImgSrc(src);
+  // }, [src]);
 
   return (
     <Image
