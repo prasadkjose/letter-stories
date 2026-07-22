@@ -1,6 +1,6 @@
 ---
 banner:
-  title: "Andromeda is the most intuitive </br> way to prototype Designs"
+  title: "Testing CMS"
   image: /images/banner-app.png
   link:
     label: Get Premium Version
