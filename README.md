@@ -1,106 +1,136 @@
-# Linux-like Portfolio Website
+# Letter Stories 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9818157c-d810-4ad6-b218-038707143a3c/deploy-status?style=flat-square)](https://app.netlify.com/sites/prasadkjose/deploys)
-[![License](https://img.shields.io/github/license/prasadkjose/Kali-Linux-Portfolio?style=flat-square)](LICENSE)
-[![Repo Size](https://img.shields.io/github/repo-size/prasadkjose/Kali-Linux-Portfolio?style=flat-square)](https://github.com/prasadkjose/Kali-Linux-Portfolio)
-[![Top Language](https://img.shields.io/github/languages/top/prasadkjose/Kali-Linux-Portfolio?style=flat-square)](https://github.com/prasadkjose/Kali-Linux-Portfolio)
+[![License](https://img.shields.io/github/license/prasadkjose/letter-stories?style=flat-square)](LICENSE)
+[![Repo Size](https://img.shields.io/github/repo-size/prasadkjose/letter-stories?style=flat-square)](https://github.com/prasadkjose/letter-stories)
+[![Top Language](https://img.shields.io/github/languages/top/prasadkjose/letter-stories?style=flat-square)](https://github.com/prasadkjose/letter-stories)
 
 [![Live Demo](https://img.shields.io/badge/View%20Live%20Demo-prasadkjose.com-17BB98?style=for-the-badge)](https://prasadkjose.com)
 
-My developer portfolio website themed after Linux, built with React & TypeScript, simulating a Linux desktop environment to showcase projects, resume, and contact information.
+A modern, feature-rich blog and landing page built on the **Andromeda Light Next.js** template — designed for fast performance, beautiful typography, and seamless content management with MDX.
 
 ## 🛠️ Tech Stack
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-3.9%2B-blue?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-17%2B-%2361DAFB?style=flat-square&logo=react&logoColor=white)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-%40vitejs-%23646cff?style=flat-square&logo=vite)](https://vitejs.dev/)
-[![Styled Components](https://img.shields.io/badge/Styled--Components-102029?style=flat-square&logo=styled-components&logoColor=white)](https://styled-components.com/)
-[![Supabase](https://img.shields.io/badge/Supabase-Database-3ECF8E?style=flat-square&logo=supabase&logoColor=white)](https://supabase.com/)
+[![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=flat-square&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v4-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![GSAP](https://img.shields.io/badge/GSAP-3-88CE02?style=flat-square&logo=greensock&logoColor=white)](https://gsap.com/)
+[![MDX](https://img.shields.io/badge/MDX-1B1B24?style=flat-square&logo=mdx&logoColor=white)](https://mdxjs.com/)
 
 ## 📦 Installation & Setup
 
 ### Prerequisites
 
-- Node.js (version 16 or higher)
-- pnpm (recommended) or npm
+- **Node.js** (version 18.18 or higher)
+- **pnpm** (recommended)
 
 ### Local Development
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/prasadkjose/Linux-Portfolio.git
-   cd Linux-Portfolio
-   ```
-2. **Install dependencies:**
-   ```bash
-   # Using pnpm (recommended)
-   pnpm install
-   
-   # Or using npm
-   npm install
+   git clone https://github.com/prasadkjose/letter-stories.git
+   cd letter-stories
    ```
 
-3. **Start development server:**
+2. **Install dependencies:**
+   ```bash
+   pnpm install
+   ```
+
+3. **Start the development server:**
    ```bash
    pnpm dev
    ```
 
 4. **Open your browser:**
-   Navigate to `http://localhost:3000` to view the portfolio
+   Navigate to `http://localhost:3000` to view the site.
 
-### Docker Setup
-
-For containerized development:
+### Production Build
 
 ```bash
-# Build the Docker image
-docker build -t prasad-portfolio .
-
-# Run the container
-docker run -p 127.0.0.1:3000:3000 prasad-portfolio
+pnpm build
+pnpm start
 ```
 
-## 🎯 Usage
+## 📝 Features
 
-Once the application is running, you'll be greeted with a Linux-style desktop interface. Here are some commands you can try:
+- **Next.js 16 (App Router)** — The latest React framework with file-based routing, server components, and static generation.
+- **React 19** — Leveraging the latest React features for optimal performance.
+- **Tailwind CSS v4** — Utility-first CSS framework for rapid UI development.
+- **MDX Blog Engine** — Write blog posts in Markdown with embedded JSX components via `next-mdx-remote`.
+- **GSAP Animations** — Smooth, high-performance animations for an engaging user experience.
+- **Swiper.js** — Touch-friendly sliders and carousels.
+- **Syntax Highlighting** — Code blocks rendered with `rehype-highlight` and `react-syntax-highlighter`.
+- **Responsive Design** — Fully responsive across all screen sizes.
+- **SEO Optimized** — Meta tags, Open Graph images, and semantic HTML.
+- **Disqus Comments** — Integrated commenting system for blog posts.
+- **Pagination** — Built-in pagination for blog listing pages.
+- **Shortcodes** — Reusable MDX components (Accordion, Tabs, Buttons, Notices, Videos, YouTube embeds, etc.).
 
-- `help` - Display available commands
-- `about` - Learn about the developer
-- `projects` - View featured projects
-- `resume` - Access the professional resume
-- `socials` - View social media links
-- `email` - Get contact information
-- `education` - View educational background
-- `clear` - Clear the terminal output
+## ✍️ Adding Content
 
-### Keyboard Shortcuts
+Blog posts live in `src/content/posts/` as Markdown (`.md`) files with frontmatter:
 
-- **TAB** or **Ctrl+i** - Autocomplete commands
-- **Up/Down Arrow** - Navigate command history
-- **F11** - Toggle fullscreen mode
+```markdown
+---
+title: "My Blog Post"
+date: 2026-01-15T10:00:00+00:00
+author: "Prasad Koshy Jose"
+description: "A brief description of the post"
+image: "/images/blog/post-image.jpg"
+categories:
+  - Technology
+tags:
+  - nextjs
+  - tailwind
+---
+
+Post content written in **Markdown** with support for JSX components.
+```
+
+## 📁 Project Structure
+
+```
+letter-stories/
+├── public/                  # Static assets (images, fonts, etc.)
+├── src/
+│   ├── app/                 # Next.js App Router pages
+│   │   ├── layout.js        # Root layout
+│   │   ├── page.js          # Homepage
+│   │   ├── posts/           # Blog routes
+│   │   └── [regular]/       # Static pages (about, contact, etc.)
+│   ├── config/              # Site configuration (JSON)
+│   ├── content/             # MDX/Markdown content
+│   │   └── posts/           # Blog posts
+│   ├── hooks/               # Custom React hooks
+│   ├── layouts/             # Page layout components
+│   │   ├── components/      # Reusable UI components
+│   │   ├── partials/        # Partial templates (Header, Footer, etc.)
+│   │   └── shortcodes/      # MDX shortcode components
+│   ├── lib/                 # Utility functions
+│   │   └── utils/           # Helper utilities
+│   └── styles/              # Global styles (Tailwind CSS)
+├── scripts/                 # Build scripts
+│   └── themeGenerator.mjs   # Theme CSS generation
+├── next.config.js
+├── tailwind.config.js
+├── package.json
+└── README.md
+```
 
 ## 🤝 Contributing
 
-We welcome contributions! Here's how to get started:
+Contributions are welcome!
 
-1. **Fork the repository** on GitHub
-2. **Clone your fork** locally
-3. **Create a feature branch** with a descriptive name
-4. **Make your changes** following our coding standards
-5. **Test your changes** thoroughly
-6. **Submit a pull request** with a clear description
-
-### Development Guidelines
-
-- Use TypeScript for type safety
-- Follow the existing code style and patterns
-- Add appropriate comments for complex logic
-- Ensure responsive design across all screen sizes
-- Test in multiple browsers
+1. **Fork** the repository
+2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
+3. **Commit your changes** (`git commit -m 'Add amazing feature'`)
+4. **Push to the branch** (`git push origin feature/amazing-feature`)
+5. **Open a Pull Request**
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ## 👥 Author
 
@@ -112,25 +142,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgements
 
-This project is based on a fork of [Kali-Linux-Hacker-Portfolio](https://github.com/jihedkdiss/Kali-Linux-Hacker-Portfolio). I would like to thank the original authors and contributors for their excellent work and for making the project open source.
-
-This fork builds upon their work with additional modifications and improvements to better showcase my professional portfolio.
-
-## 📊 Project Statistics
-
-- **Languages**: TypeScript, React, CSS-in-JS with styled components.
-- **Framework**: React 17+
-- **Build Tool**: Vite
-- **Package Manager**: pnpm (recommended)
-- **License**: MIT
+This project is built upon the [Andromeda Light Next.js](https://themefisher.com/products/andromeda-light-nextjs) template by [Themefisher](https://themefisher.com/). Thanks to the Themefisher team for creating and open-sourcing this excellent template.
 
 ## 🔗 Quick Links
 
 - [Live Demo](https://prasadkjose.com)
-- [GitHub Repository](https://github.com/prasadkjose/Linux-Portfolio)
-- [Issues](https://github.com/prasadkjose/Linux-Portfolio/issues)
-- [Pull Requests](https://github.com/prasadkjose/Linux-Portfolio/pulls)
+- [GitHub Repository](https://github.com/prasadkjose/letter-stories)
+- [Issues](https://github.com/prasadkjose/letter-stories/issues)
+- [Pull Requests](https://github.com/prasadkjose/letter-stories/pulls)
 
 ---
 
-**Built with ❤️ using React & TypeScript**
+**Built with ❤️ using Next.js, React, and Tailwind CSS.**
