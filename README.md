@@ -146,7 +146,7 @@ This project is built upon the [Andromeda Light Next.js](https://themefisher.com
 
 ## 🔗 Quick Links
 
-- [Live Demo](https://prasadkjose.com)
+- [Live Demo](https://prasadkjose.com/letter-stories)
 - [GitHub Repository](https://github.com/prasadkjose/letter-stories)
 - [Issues](https://github.com/prasadkjose/letter-stories/issues)
 - [Pull Requests](https://github.com/prasadkjose/letter-stories/pulls)
