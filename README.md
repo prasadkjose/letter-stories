@@ -9,20 +9,6 @@
 
 My developer portfolio website themed after Linux, built with React & TypeScript, simulating a Linux desktop environment to showcase projects, resume, and contact information.
 
-## 🚀 Features
-
-- **Linux Desktop Experience**: With Linux themes and colours. Choose between Ubuntu, Kali and Fedora distros at any time and see the UI change. 
-- **Interactive Terminal**: Built-in Linux Terminal for you command line junkies with autocomplete (TAB/Ctrl+i) and command history (Up/Down)
-- **Rich Command Set**: Navigate through `about`, `help`, `projects`, `resume`, `socials`, `email`, `education`, and more
-- **Keyboard-First Design**: Type commands, open windows, toggle fullscreen for optimal developer experience
-- **Responsive Design**: Works seamlessly across desktop, tablet, and mobile devices
-- **Dynamic Resume**: Choose between Ubuntu, Kali, and Fedora themes to view different professional resumes - Ubuntu shows Consultant resume, Kali shows Information Security resume, and Fedora shows SDE resume
-- __Resource Preloading__: Critical assets are preloaded after the splash screen for faster subsequent renders.
-- __Supabase Database Integration__: Built-in visitor analytics, session tracking and persistent data storage using Supabase PostgreSQL database. Handles anonymous visitor metrics securely with row level security. **Tracks only visitor counts and country location, no IP addresses are stored or logged.**
-- __Serverless Function__: A backend function proxies GraphQL API calls (GitHub fetching pinned repos for now) to keep the token server-side. Look at [serverless/readme](src/serverless/README.md)
-- __Docker Support__: Dockerfile included for containerized deployment.
-- **Modern Taskbar**: Fully featured desktop taskbar with clock, calendar, system announcements and widget panel. See [Taskbar Documentation](src/layout/taskbar/README.md) for full details.
-
 ## 🛠️ Tech Stack
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-3.9%2B-blue?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
