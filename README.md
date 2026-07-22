@@ -5,7 +5,7 @@
 [![Repo Size](https://img.shields.io/github/repo-size/prasadkjose/letter-stories?style=flat-square)](https://github.com/prasadkjose/letter-stories)
 [![Top Language](https://img.shields.io/github/languages/top/prasadkjose/letter-stories?style=flat-square)](https://github.com/prasadkjose/letter-stories)
 
-[![Live Demo](https://img.shields.io/badge/View%20Live%20Demo-prasadkjose.com-17BB98?style=for-the-badge)](https://prasadkjose.com)
+[![Live Demo](https://img.shields.io/badge/View%20Live%20Demo-prasadkjose.com-17BB98?style=for-the-badge)](https://letter-stories.prasadkjose.com)
 
 A modern, feature-rich blog and landing page built on the **Andromeda Light Next.js** template — designed for fast performance, beautiful typography, and seamless content management with MDX.
 
@@ -96,7 +96,7 @@ letter-stories/
 ├── src/
 │   ├── app/                 # Next.js App Router pages
 │   │   ├── layout.js        # Root layout
-│   │   ├── page.js          # Homepage
+│   │   ├── homepage.js          # Homepage
 │   │   ├── posts/           # Blog routes
 │   │   └── [regular]/       # Static pages (about, contact, etc.)
 │   ├── config/              # Site configuration (JSON)

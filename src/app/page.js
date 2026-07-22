@@ -9,7 +9,7 @@ import Testimonial from "@layouts/partials/Testimonial";
 import { getListPage } from "@lib/contentParser";
 
 const Home = async () => {
-  const homepage = await getListPage("src/content/_index.md");
+  const homepage = await getListPage("src/content/homepage.md");
   const { frontmatter } = homepage;
   const { banner, brands, features, intro, speciality, testimonial } =
     frontmatter;

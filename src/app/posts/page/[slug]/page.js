@@ -15,7 +15,7 @@ const BlogPagination = async props => {
   const currentPage = parseInt((params && params.slug) || 1);
   const { pagination } = config.settings;
   const posts = await getSinglePage(`src/content/${blog_folder}`);
-  const postIndex = await getListPage(`src/content/${blog_folder}/_index.md`);
+  const postIndex = await getListPage(`src/content/${blog_folder}/homepage.md`);
   //
   const indexOfLastPost = currentPage * pagination;
   const indexOfFirstPost = indexOfLastPost - pagination;

@@ -3,7 +3,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 
-// get list page data, ex: _index.md
+// get list page data, ex: homepage.md
 export const getListPage = async filePath => {
   const pageData = fs.readFileSync(filePath, "utf-8");
   const pageDataParsed = matter(pageData);
