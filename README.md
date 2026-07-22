@@ -1,136 +1,150 @@
-<h1 align=center>Andromeda Light Nextjs</h1>
-<p align=center>Andromeda Light is a SAAS template for Nextjs</p>
-<h2 align="center"> <a target="_blank" href="https://andromeda-light-nextjs.vercel.app/" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fandromeda-light-nextjs.vercel.app%2F&form_factor=desktop">Page Speed (100%)🚀</a>
-</h2>
+# Linux-like Portfolio Website
 
-<p align=center>
-  <a href="https://github.com/vercel/next.js/releases/tag/v13.0.6" alt="Contributors">
-    <img src="https://img.shields.io/static/v1?label=NEXTJS&message=13.0&color=000&logo=nextjs" />
-  </a>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9818157c-d810-4ad6-b218-038707143a3c/deploy-status?style=flat-square)](https://app.netlify.com/sites/prasadkjose/deploys)
+[![License](https://img.shields.io/github/license/prasadkjose/Kali-Linux-Portfolio?style=flat-square)](LICENSE)
+[![Repo Size](https://img.shields.io/github/repo-size/prasadkjose/Kali-Linux-Portfolio?style=flat-square)](https://github.com/prasadkjose/Kali-Linux-Portfolio)
+[![Top Language](https://img.shields.io/github/languages/top/prasadkjose/Kali-Linux-Portfolio?style=flat-square)](https://github.com/prasadkjose/Kali-Linux-Portfolio)
 
-  <a href="https://github.com/themefisher/andromeda-light-nextjs/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/themefisher/andromeda-light-nextjs" alt="license"></a>
+[![Live Demo](https://img.shields.io/badge/View%20Live%20Demo-prasadkjose.com-17BB98?style=for-the-badge)](https://prasadkjose.com)
 
-  <img src="https://img.shields.io/github/languages/code-size/themefisher/andromeda-light-nextjs" alt="code size">
+My developer portfolio website themed after Linux, built with React & TypeScript, simulating a Linux desktop environment to showcase projects, resume, and contact information.
 
-  <a href="https://github.com/themefisher/andromeda-light-nextjs/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/themefisher/bigspring-light-nextjs" alt="contributors"></a>
-</p>
+## 🚀 Features
 
-![andromeda-light](https://assets.teamosis.com/thumbs/andromeda-light.png)
+- **Linux Desktop Experience**: With Linux themes and colours. Choose between Ubuntu, Kali and Fedora distros at any time and see the UI change. 
+- **Interactive Terminal**: Built-in Linux Terminal for you command line junkies with autocomplete (TAB/Ctrl+i) and command history (Up/Down)
+- **Rich Command Set**: Navigate through `about`, `help`, `projects`, `resume`, `socials`, `email`, `education`, and more
+- **Keyboard-First Design**: Type commands, open windows, toggle fullscreen for optimal developer experience
+- **Responsive Design**: Works seamlessly across desktop, tablet, and mobile devices
+- **Dynamic Resume**: Choose between Ubuntu, Kali, and Fedora themes to view different professional resumes - Ubuntu shows Consultant resume, Kali shows Information Security resume, and Fedora shows SDE resume
+- __Resource Preloading__: Critical assets are preloaded after the splash screen for faster subsequent renders.
+- __Supabase Database Integration__: Built-in visitor analytics, session tracking and persistent data storage using Supabase PostgreSQL database. Handles anonymous visitor metrics securely with row level security. **Tracks only visitor counts and country location, no IP addresses are stored or logged.**
+- __Serverless Function__: A backend function proxies GraphQL API calls (GitHub fetching pinned repos for now) to keep the token server-side. Look at [serverless/readme](src/serverless/README.md)
+- __Docker Support__: Dockerfile included for containerized deployment.
+- **Modern Taskbar**: Fully featured desktop taskbar with clock, calendar, system announcements and widget panel. See [Taskbar Documentation](src/layout/taskbar/README.md) for full details.
 
-## 🔑Key Features
+## 🛠️ Tech Stack
 
-- 📄 7+ Pre-Designed Pages
-- 🚀 Google Page Speed score 100! (Desktop)
-- 🎨 Tailwind CSS
-- 🌍 SEO-Friendly
-- 📱 100% Responsive Design
-- ✉️ Supports Contact Form
-- 📊 Google Analytics support
-- 💬 Disqus Comment Support
-- 🖼️ Custom Logo Support
-- 👥 Multi-Author
-- 🌐 Semantic HTML Document Structure
-- 🎨 Includes All SCSS Files
-- 🌅 Image Optimized With Next/image
-- 🎨 Color and fonts variable in the config file
-- 📚 Related Posts Suggestion
-- ✏️ MDX Support with many built-in custom components
+[![TypeScript](https://img.shields.io/badge/TypeScript-3.9%2B-blue?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-17%2B-%2361DAFB?style=flat-square&logo=react&logoColor=white)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-%40vitejs-%23646cff?style=flat-square&logo=vite)](https://vitejs.dev/)
+[![Styled Components](https://img.shields.io/badge/Styled--Components-102029?style=flat-square&logo=styled-components&logoColor=white)](https://styled-components.com/)
+[![Supabase](https://img.shields.io/badge/Supabase-Database-3ECF8E?style=flat-square&logo=supabase&logoColor=white)](https://supabase.com/)
 
-## 📄 7+ Pre-Designed Pages
+## 📦 Installation & Setup
 
-- 🏠 Home Page
-- ℹ️ About Page
-- 📞 Contact Page
-- 🎨 Elements Page
-- 🔒 Terms and Condition Page
-- 📚 Blog Page
-- 📝 Blog Single Page
+### Prerequisites
 
-<!-- installation -->
+- Node.js (version 16 or higher)
+- pnpm (recommended) or npm
 
-## ⚙️Installation
+### Local Development
 
-After downloading the template, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/prasadkjose/Linux-Portfolio.git
+   cd Linux-Portfolio
+   ```
+2. **Install dependencies:**
+   ```bash
+   # Using pnpm (recommended)
+   pnpm install
+   
+   # Or using npm
+   npm install
+   ```
 
-### 🔧Install prerequisites (once for a machine)
+3. **Start development server:**
+   ```bash
+   pnpm dev
+   ```
 
-- **Node Installation:** [Install node js](https://nodejs.org/en/download/) [Recommended LTS version]
+4. **Open your browser:**
+   Navigate to `http://localhost:3000` to view the portfolio
 
-### 🖥️Local setup
+### Docker Setup
 
-After successfully installing those dependencies, open this template with any IDE [[VS Code](https://code.visualstudio.com/) recommended], and then open the internal terminal of IDM [vs code shortcut <code>ctrl/cmd+\`</code>]
+For containerized development:
 
-- Install dependencies
+```bash
+# Build the Docker image
+docker build -t prasad-portfolio .
 
-```
-npm install
-```
-
-- Run locally
-
-```
-npm run dev
-```
-
-After that, it will open up a preview of the template in your default browser, watch for changes to source files, and live-reload the browser when changes are saved.
-
-## 🏗️Production Build
-
-After finishing all the customization, you can create a production build by running this command.
-
-```
-npm run build
+# Run the container
+docker run -p 127.0.0.1:3000:3000 prasad-portfolio
 ```
 
-<!-- edit with sitepins -->
+## 🎯 Usage
 
-## 📝 Edit Content with CMS
+Once the application is running, you'll be greeted with a Linux-style desktop interface. Here are some commands you can try:
 
-This template comes pre-configured with [**Sitepins**](https://sitepins.com/?aff=tfgithub), a Git-based Headless CMS designed for seamless content management. You can update your website’s text, images, and configuration without touching a single line of code.
+- `help` - Display available commands
+- `about` - Learn about the developer
+- `projects` - View featured projects
+- `resume` - Access the professional resume
+- `socials` - View social media links
+- `email` - Get contact information
+- `education` - View educational background
+- `clear` - Clear the terminal output
 
-**How to get started:**
+### Keyboard Shortcuts
 
-Click the Edit with Sitepins button below and follow the on-screen instructions to start editing your content visually.
+- **TAB** or **Ctrl+i** - Autocomplete commands
+- **Up/Down Arrow** - Navigate command history
+- **F11** - Toggle fullscreen mode
 
-  <a target="_blank" href="https://app.sitepins.com/new/clone?name=Andromeda%20Light%20Nextjs&repository=https://github.com/themefisher/andromeda-light-nextjs/?aff=tfgithub">
-    <img src="https://sitepins.com/button.svg" alt="Edit with Sitepins">
-  </a>
+## 🤝 Contributing
 
-<!-- reporting issue -->
+We welcome contributions! Here's how to get started:
 
-## 🐞Reporting Issues
+1. **Fork the repository** on GitHub
+2. **Clone your fork** locally
+3. **Create a feature branch** with a descriptive name
+4. **Make your changes** following our coding standards
+5. **Test your changes** thoroughly
+6. **Submit a pull request** with a clear description
 
-We use GitHub Issues as the official bug tracker for this Template. Please Search [existing issues](https://github.com/themefisher/andromeda-light-nextjs/issues). It’s possible someone has already reported the same problem.
-If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/andromeda-light-nextjs/issues).
+### Development Guidelines
 
-<!-- support -->
+- Use TypeScript for type safety
+- Follow the existing code style and patterns
+- Add appropriate comments for complex logic
+- Ensure responsive design across all screen sizes
+- Test in multiple browsers
 
-## 💬Technical Support or Questions (Paid)
+## 📄 License
 
-If you have questions or need help integrating the product please [contact us](https://themefisher.com/contact) instead of opening an issue.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-<!-- licence -->
+## 👥 Author
 
-## 📄License
+**Prasad Koshy Jose**
 
-Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
+[![Website](https://img.shields.io/badge/Website-prasadkjose.com-17BB98?style=for-the-badge)](https://prasadkjose.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/prasadkjose)
+[![X / Twitter](https://img.shields.io/badge/X-%231DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/prasadkjose)
 
-**Code License:** Released under the [MIT](https://github.com/themefisher/andromeda-light-nextjs/blob/main/LICENSE) license.
+## 🙏 Acknowledgements
 
-**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+This project is based on a fork of [Kali-Linux-Hacker-Portfolio](https://github.com/jihedkdiss/Kali-Linux-Hacker-Portfolio). I would like to thank the original authors and contributors for their excellent work and for making the project open source.
 
-## 👨‍💻Hire Us
+This fork builds upon their work with additional modifications and improvements to better showcase my professional portfolio.
 
-Besides developing unique, blazing-fast Nextjs templates, we also provide customized services. We specialize in creating affordable, high-quality static websites based on Nextjs.
+## 📊 Project Statistics
 
-If you need to customize the theme or complete website development from scratch, you can hire us. **Check Our
-[Contact Page](https://themefisher.com/contact)**
+- **Languages**: TypeScript, React, CSS-in-JS with styled components.
+- **Framework**: React 17+
+- **Build Tool**: Vite
+- **Package Manager**: pnpm (recommended)
+- **License**: MIT
 
-## 👉Nextjs Templates By Us
+## 🔗 Quick Links
 
-<a href="https://themefisher.com/products/bigspring-light-nextjs">
-<img src="https://demo.gethugothemes.com/thumbnails/bigspring.png" height="300" width="400"/>
-<p>Bigspring Light Nextjs</p>
-</a>
+- [Live Demo](https://prasadkjose.com)
+- [GitHub Repository](https://github.com/prasadkjose/Linux-Portfolio)
+- [Issues](https://github.com/prasadkjose/Linux-Portfolio/issues)
+- [Pull Requests](https://github.com/prasadkjose/Linux-Portfolio/pulls)
+
+---
+
+**Built with ❤️ using React & TypeScript**
