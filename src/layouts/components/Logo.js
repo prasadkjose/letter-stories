@@ -7,11 +7,11 @@ const Logo = ({ src }) => {
   const { logo, logo_width, logo_height, logo_text, title } = config.site;
 
   return (
-    <Link href="/" className="navbar-brand block">
+    <Link href="/" className="navbar-brand flex items-center">
       {src || logo ? (
         <ImageFallback
-          width={logo_width.replace("px", "") * 2}
-          height={logo_height.replace("px", "") * 2}
+          width={logo_width.replace("px", "")}
+          height={logo_height.replace("px", "")}
           src={src ? src : logo}
           alt={title}
           priority
@@ -25,6 +25,7 @@ const Logo = ({ src }) => {
       ) : (
         title
       )}
+      {title}
     </Link>
   );
 };
