@@ -181,6 +181,7 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
               </div>
             </div>
           </div>
+          {/* ------------------------- # Swiper coponent --------------------------*/}
           <div className="row border-y border-border py-5">
             <div className="animate from-right col-12">
               <Swiper
@@ -213,6 +214,7 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
               </Swiper>
             </div>
           </div>
+          {/* ------------------------- # Swiper coponent END --------------------------*/}
         </div>
       </div>
     </section>
