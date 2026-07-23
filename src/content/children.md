@@ -2,7 +2,7 @@
 layout: "homepage"
 url: /children
 shortbanner:
-  image: "/images/flower.jpg"
+  image: "/images/children-sq.png"
   title: Little Dreamers
   subtitle: For the Curious
   icon: star
@@ -12,7 +12,7 @@ shortbanner:
     href: /children
 banner:
   title: Little Dreamers
-  image: /images/banner-image.png
+  image: /images/banner-4.png
   link:
     label: Shop now
     href: /shop

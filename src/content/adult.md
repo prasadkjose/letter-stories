@@ -2,7 +2,7 @@
 layout: "homepage"
 url: /adult
 shortbanner:
-  image: "/images/flower.jpg"
+  image: "/images/adults-sq.png"
   title: Wise Words
   subtitle: For the Intentional
   icon: feather
@@ -12,7 +12,7 @@ shortbanner:
     href: /adult
 banner:
   title: Wise Words
-  image: /images/banner-image.png
+  image: /images/banner-3.png
   link:
     label: Shop now
     href: /shop
