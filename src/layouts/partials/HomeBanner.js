@@ -150,14 +150,25 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
               height={65}
             />
           </div>
-          <div className="row overflow-hidden rounded-2xl">
+          <div
+            className="overflow-hidden rounded-2xl relative"
+            style={{ width: "100vw", left: "calc(-50vw + 50%)" }}
+          >
             <div className="col-12">
               <div className="row relative justify-center pb-10">
-                <div className="banner-content col-10 pb-10 pt-20 text-center">
+                <div className="absolute -top-7 w-full h-full border-2 border-primary opacity-30"></div>
+                <ImageFallback
+                  className="relative top-10 "
+                  src={bannerData.image}
+                  width={1190}
+                  height={666}
+                  priority={true}
+                />
+                <div className="banner-content col-10 pb-10 pt-15 text-center">
                   {markdownify(
-                    bannerData.title,
-                    "h1",
-                    "mb-8 banner-title opacity-0"
+                    bannerData.subtitle,
+                    "h3",
+                    "mb-8 italic banner-title opacity-0"
                   )}
                   <div className="banner-btn opacity-0">
                     <Link
@@ -167,16 +178,6 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
                       {bannerData.link.label}
                     </Link>
                   </div>
-                </div>
-                <div className="col-10 relative">
-                  <div className="absolute -top-10 -right-16 w-full h-full border-2 border-primary opacity-30"></div>
-                  <ImageFallback
-                    className="banner-img opacity-0 relative"
-                    src={bannerData.image}
-                    width={1170}
-                    height={666}
-                    priority={true}
-                  />
                 </div>
               </div>
             </div>

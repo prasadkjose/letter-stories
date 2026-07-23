@@ -12,6 +12,7 @@ shortbanner:
     href: /adult
 banner:
   title: Wise Words
+  subtitle: For the Intentional
   image: /images/banner-3.png
   link:
     label: Shop now

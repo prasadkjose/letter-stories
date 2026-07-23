@@ -12,6 +12,7 @@ shortbanner:
     href: /children
 banner:
   title: Little Dreamers
+  subtitle: For the Curious
   image: /images/banner-4.png
   link:
     label: Shop now
