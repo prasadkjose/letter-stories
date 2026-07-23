@@ -2,7 +2,7 @@
 layout: "homepage"
 url: /children
 shortbanner:
-  icon: book
+  image: "/images/flower.jpg"
   title: Children Stories
   content: Discover our magical collection of children's letter stories, filled with adventure and imagination for young readers.
   link:

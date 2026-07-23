@@ -2,7 +2,7 @@
 layout: "homepage"
 url: /adult
 shortbanner:
-  icon: heart
+  image: "/images/flower.jpg"
   title: Adult Stories
   content: Explore our collection of adult letter stories, perfect for grown-up readers looking for engaging narratives.
   link:
