@@ -34,7 +34,7 @@ const RegularPages = async props => {
         <About data={pageData} />
       ) : layout === "contact" ? (
         <Contact data={pageData} />
-      ) : layout === "homepage" ? (
+      ) : layout === "homepage" ? ( // This can be both Adult and Children hompepages.
         <Homepage data={pageData} />
       ) : (
         <Default data={pageData} />
