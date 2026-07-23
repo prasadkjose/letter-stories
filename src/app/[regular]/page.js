@@ -3,6 +3,8 @@ import About from "@layouts/About";
 import GSAPWrapper from "@layouts/components/GSAPWrapper";
 import Contact from "@layouts/Contact";
 import Default from "@layouts/Default";
+import Homepage from "@layouts/Homepage";
+
 import SeoMeta from "@layouts/partials/SeoMeta";
 import { getRegularPage, getSinglePage } from "@lib/contentParser";
 
@@ -32,6 +34,8 @@ const RegularPages = async props => {
         <About data={pageData} />
       ) : layout === "contact" ? (
         <Contact data={pageData} />
+      ) : layout === "homepage" ? (
+        <Homepage data={pageData} />
       ) : (
         <Default data={pageData} />
       )}

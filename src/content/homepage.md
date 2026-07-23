@@ -1,4 +1,5 @@
 ---
+layout: "homepage"
 banner:
   title: Testing CMS
   image: /images/banner-image.png
