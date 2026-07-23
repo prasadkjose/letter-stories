@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://letter-stories.app/menu.schema.json",
+  "title": "Letter Stories - Menu Configuration",
+  "description": "Navigation menu structure for main header navigation and footer links. Used in: Header.js (main menu), Footer.js (footer menu).",
+  "type": "object",
+  "properties": {
+    "main": {
+      "type": "array",
+      "description": "Primary navigation menu items displayed in the site header. Used in Header.js (renders as top navigation bar links).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Display label for the navigation link. Used in Header.js as the visible menu text."
+          },
+          "url": {
+            "type": "string",
+            "description": "URL path for the navigation link. Used in Header.js as the href attribute."
+          },
+          "hasChildren": {
+            "type": "boolean",
+            "description": "Indicates if this menu item has dropdown children. Used in Header.js to conditionally render a dropdown submenu."
+          },
+          "children": {
+            "type": "array",
+            "description": "Dropdown submenu items under this parent menu entry. Used in Header.js to render nested dropdown links.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Display label for the child navigation link."
+                },
+                "url": {
+                  "type": "string",
+                  "description": "URL path for the child navigation link."
+                }
+              },
+              "required": ["name", "url"]
+            }
+          }
+        },
+        "required": ["name", "url"]
+      }
+    },
+    "footer": {
+      "type": "array",
+      "description": "Navigation links displayed in the site footer. Used in Footer.js (renders as footer link list).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Display label for the footer navigation link. Used in Footer.js as visible text."
+          },
+          "url": {
+            "type": "string",
+            "description": "URL path for the footer navigation link. Used in Footer.js as the href attribute."
+          }
+        },
+        "required": ["name", "url"]
+      }
+    }
+  },
+  "required": ["main", "footer"]
+}

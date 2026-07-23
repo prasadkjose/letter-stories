@@ -1,0 +1,215 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://letter-stories.app/config.schema.json",
+  "title": "Letter Stories - Site Configuration",
+  "description": "Main site configuration used across multiple components including layout, header, footer, SEO, and page components.",
+  "type": "object",
+  "properties": {
+    "site": {
+      "type": "object",
+      "description": "Site identity and branding settings. Used in: Logo.js, Header.js, Baseof.js, SeoMeta.js, Share.js, layout.js",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Site title. Used in Baseof.js (page title tag), SeoMeta.js (meta title fallback)"
+        },
+        "base_url": {
+          "type": "string",
+          "description": "Base URL of the site. Used in Share.js (share link construction), Baseof.js (canonical URL), SeoMeta.js (canonical URL)"
+        },
+        "favicon": {
+          "type": "string",
+          "description": "Path to favicon image. Used in layout.js (favicon link tag)"
+        },
+        "logo": {
+          "type": "string",
+          "description": "Path to logo image. Used in Logo.js, Header.js"
+        },
+        "logo_width": {
+          "type": "string",
+          "description": "Width of logo image in pixels. Used in Logo.js"
+        },
+        "logo_height": {
+          "type": "string",
+          "description": "Height of logo image in pixels. Used in Logo.js"
+        },
+        "logo_text": {
+          "type": "string",
+          "description": "Text fallback when logo image cannot be displayed. Used in Logo.js"
+        }
+      },
+      "required": [
+        "title",
+        "base_url",
+        "favicon",
+        "logo",
+        "logo_width",
+        "logo_height",
+        "logo_text"
+      ]
+    },
+    "settings": {
+      "type": "object",
+      "description": "Blog/listing settings. Used in: Post.js, posts/page/[slug]/page.js, posts/[single]/page.js",
+      "properties": {
+        "pagination": {
+          "type": "integer",
+          "description": "Number of posts per page for pagination. Used in posts/page/[slug]/page.js"
+        },
+        "summary_length": {
+          "type": "integer",
+          "description": "Character limit for post summaries/excerpts. Used in Post.js"
+        },
+        "blog_folder": {
+          "type": "string",
+          "description": "Content folder name where blog posts are stored. Used in Post.js, posts/[single]/page.js, posts/page/[slug]/page.js"
+        }
+      },
+      "required": ["pagination", "summary_length", "blog_folder"]
+    },
+    "params": {
+      "type": "object",
+      "description": "General site parameters. Used in: Contact.js, Footer.js",
+      "properties": {
+        "tag_manager_id": {
+          "type": "string",
+          "description": "Google Tag Manager ID. Used in layout.js"
+        },
+        "contact_form_action": {
+          "type": "string",
+          "description": "Form action URL for the contact form submission. Used in Contact.js"
+        },
+        "footer_content": {
+          "type": "string",
+          "description": "Footer description/about text. Used in Footer.js"
+        },
+        "copyright": {
+          "type": "string",
+          "description": "Copyright notice displayed in the footer. Used in Footer.js"
+        }
+      },
+      "required": [
+        "tag_manager_id",
+        "contact_form_action",
+        "footer_content",
+        "copyright"
+      ]
+    },
+    "contact_info": {
+      "type": "object",
+      "description": "Contact information displayed in the footer. Used in: Footer.js",
+      "properties": {
+        "phone": {
+          "type": "string",
+          "description": "Phone number displayed in footer. Used in Footer.js (displayed as contact info)"
+        },
+        "email": {
+          "type": "string",
+          "description": "Email address displayed in footer. Used in Footer.js (displayed as contact info)"
+        }
+      },
+      "required": ["phone", "email"]
+    },
+    "nav_button": {
+      "type": "object",
+      "description": "Call-to-action button in the navigation header. Used in: Header.js",
+      "properties": {
+        "enable": {
+          "type": "boolean",
+          "description": "Toggle to show/hide the navigation button. Used in Header.js (conditional render)"
+        },
+        "label": {
+          "type": "string",
+          "description": "Button text label. Used in Header.js"
+        },
+        "link": {
+          "type": "string",
+          "description": "Button destination URL. Used in Header.js"
+        }
+      },
+      "required": ["enable", "label", "link"]
+    },
+    "metadata": {
+      "type": "object",
+      "description": "SEO meta information. Used in: SeoMeta.js, Baseof.js",
+      "properties": {
+        "meta_author": {
+          "type": "string",
+          "description": "Author name for meta tags. Used in SeoMeta.js, Baseof.js"
+        },
+        "meta_image": {
+          "type": "string",
+          "description": "OG image path for social sharing. Used in SeoMeta.js, Baseof.js"
+        },
+        "meta_description": {
+          "type": "string",
+          "description": "Default meta description fallback. Used in SeoMeta.js, Baseof.js"
+        }
+      },
+      "required": ["meta_author", "meta_image", "meta_description"]
+    },
+    "call_to_action": {
+      "type": "object",
+      "description": "Call-to-action section typically shown on landing/homepage. Used in: Cta.js",
+      "properties": {
+        "enable": {
+          "type": "boolean",
+          "description": "Toggle to show/hide the CTA section. Used in Cta.js (conditional render)"
+        },
+        "title": {
+          "type": "string",
+          "description": "CTA section heading. Used in Cta.js"
+        },
+        "content": {
+          "type": "string",
+          "description": "CTA section body text. Used in Cta.js"
+        },
+        "button": {
+          "type": "object",
+          "description": "CTA button configuration. Used in Cta.js",
+          "properties": {
+            "label": {
+              "type": "string",
+              "description": "CTA button text label"
+            },
+            "link": {
+              "type": "string",
+              "description": "CTA button destination URL"
+            }
+          },
+          "required": ["label", "link"]
+        }
+      },
+      "required": ["enable", "title", "content", "button"]
+    },
+    "disqus": {
+      "type": "object",
+      "description": "Disqus comments configuration. Used in: DisqussEmbed.js",
+      "properties": {
+        "enable": {
+          "type": "boolean",
+          "description": "Toggle to enable/disable Disqus comments. Used in DisqussEmbed.js (conditional render)"
+        },
+        "shortname": {
+          "type": "string",
+          "description": "Disqus forum shortname. Used in DisqussEmbed.js"
+        },
+        "settings": {
+          "type": "object",
+          "description": "Additional Disqus configuration settings. Used in DisqussEmbed.js (passed to DiscussionEmbed)"
+        }
+      },
+      "required": ["enable", "shortname", "settings"]
+    }
+  },
+  "required": [
+    "site",
+    "settings",
+    "params",
+    "contact_info",
+    "nav_button",
+    "metadata",
+    "call_to_action",
+    "disqus"
+  ]
+}

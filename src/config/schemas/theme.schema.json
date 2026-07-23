@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://letter-stories.app/theme.schema.json",
+  "title": "Letter Stories - Theme Configuration",
+  "description": "Theme/styling configuration for colors, fonts, and font sizes. Processed by scripts/themeGenerator.mjs to generate CSS custom properties in src/styles/generated-theme.css. Used in: layout.js (font loading), generated-theme.css (CSS variables).",
+  "type": "object",
+  "properties": {
+    "colors": {
+      "type": "object",
+      "description": "Color palette definitions. Used in themeGenerator.mjs to generate CSS custom properties (--color-*).",
+      "properties": {
+        "default": {
+          "type": "object",
+          "description": "Default (light mode) color scheme. Used in themeGenerator.mjs to generate base theme CSS variables.",
+          "properties": {
+            "theme_color": {
+              "type": "object",
+              "description": "Theme-specific color values for UI elements. Used in themeGenerator.mjs as --color-* variables.",
+              "properties": {
+                "primary": {
+                  "type": "string",
+                  "description": "Primary brand color (e.g. link colors, buttons, accents). Used as --color-primary CSS variable. Used in layout.js (theme-color meta tag)."
+                },
+                "body": {
+                  "type": "string",
+                  "description": "Body background color. Used as --color-body CSS variable."
+                },
+                "border": {
+                  "type": "string",
+                  "description": "Default border color. Used as --color-border CSS variable."
+                },
+                "border_secondary": {
+                  "type": "string",
+                  "description": "Secondary/lighter border color. Used as --color-border-secondary CSS variable."
+                },
+                "light": {
+                  "type": "string",
+                  "description": "Light background/tint color. Used as --color-light CSS variable."
+                },
+                "dark": {
+                  "type": "string",
+                  "description": "Dark text/background color. Used as --color-dark CSS variable."
+                }
+              }
+            },
+            "text_color": {
+              "type": "object",
+              "description": "Text color values. Used in themeGenerator.mjs as --color-text-* variables.",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "description": "Default text color for body content. Used as --color-text CSS variable."
+                },
+                "text-dark": {
+                  "type": "string",
+                  "description": "Darker text color for headings and emphasis. Used as --color-text-dark CSS variable."
+                },
+                "text-light": {
+                  "type": "string",
+                  "description": "Lighter/muted text color for secondary content. Used as --color-text-light CSS variable."
+                }
+              }
+            }
+          }
+        },
+        "darkmode": {
+          "type": "object",
+          "description": "Optional dark mode color scheme. Used in themeGenerator.mjs to generate --color-darkmode-* CSS variables. If omitted, dark mode is not available.",
+          "properties": {
+            "theme_color": {
+              "type": "object",
+              "description": "Dark mode theme-specific UI colors. Used in themeGenerator.mjs as --color-darkmode-* variables.",
+              "properties": {
+                "primary": { "type": "string" },
+                "body": { "type": "string" },
+                "border": { "type": "string" },
+                "border_secondary": { "type": "string" },
+                "light": { "type": "string" },
+                "dark": { "type": "string" }
+              }
+            },
+            "text_color": {
+              "type": "object",
+              "description": "Dark mode text colors. Used in themeGenerator.mjs as --color-darkmode-text-* variables.",
+              "properties": {
+                "text": { "type": "string" },
+                "text-dark": { "type": "string" },
+                "text-light": { "type": "string" }
+              }
+            }
+          }
+        }
+      },
+      "required": ["default"]
+    },
+    "fonts": {
+      "type": "object",
+      "description": "Font family and size configuration. Used in layout.js (Google Fonts loading), themeGenerator.mjs (CSS variable generation).",
+      "properties": {
+        "font_family": {
+          "type": "object",
+          "description": "Font family definitions. Used in layout.js (Google Fonts URL construction), themeGenerator.mjs (--font-* CSS variables).",
+          "properties": {
+            "primary": {
+              "type": "string",
+              "description": "Primary font family specification (Google Fonts format: 'FontName:wght@...'). Used in layout.js to load from Google Fonts API, and in themeGenerator.mjs as --font-primary CSS variable."
+            },
+            "primary_type": {
+              "type": "string",
+              "description": "CSS font-family fallback type for primary font (e.g. 'sans-serif', 'serif'). Used in themeGenerator.mjs as fallback in font stack."
+            },
+            "secondary": {
+              "type": "string",
+              "description": "Secondary font family specification (Google Fonts format). Used in layout.js to load from Google Fonts API, and in themeGenerator.mjs as --font-secondary CSS variable. Falls back to primary font if empty."
+            },
+            "secondary_type": {
+              "type": "string",
+              "description": "CSS font-family fallback type for secondary font. Used in themeGenerator.mjs as fallback in font stack."
+            }
+          }
+        },
+        "font_size": {
+          "type": "object",
+          "description": "Typography scale settings. Used in themeGenerator.mjs to generate --text-* CSS variables for headings and body text.",
+          "properties": {
+            "base": {
+              "type": "string",
+              "description": "Base font size in pixels. Used in themeGenerator.mjs to calculate --text-base and --text-base-sm. Example: '16'."
+            },
+            "scale": {
+              "type": "string",
+              "description": "Typography scale factor (modular scale). Used in themeGenerator.mjs to calculate heading sizes (--text-h1 through --text-h6). Example: '1.20'."
+            }
+          }
+        }
+      },
+      "required": ["font_family", "font_size"]
+    }
+  },
+  "required": ["colors", "fonts"]
+}
