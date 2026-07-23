@@ -1,7 +1,7 @@
 "use client";
 
+import ShortBanner from "@layouts/components/ShortBanner";
 import { markdownify } from "@lib/utils/textConverter";
-import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import { useRef } from "react";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -40,13 +40,7 @@ const Features = ({ features }) => {
           >
             {features.list.map((item, index) => (
               <SwiperSlide key={"feature-" + index}>
-                <div className="feature-card m-4 rounded-md border border-transparent px-7 py-16 shadow-[0px_4px_25px_rgba(0,0,0,.05)] transition-all duration-300  hover:border-[#ffece4] hover:shadow-none">
-                  <div className="feature-card-icon inline-flex h-20 w-20 items-center justify-center rounded-md border border-[#fff7f3] text-primary">
-                    <FeatherIcon icon={item.icon} />
-                  </div>
-                  <h3 className="h4 mb-5 mt-6">{item.title}</h3>
-                  <p>{item.content}</p>
-                </div>
+                <ShortBanner data={item} />
               </SwiperSlide>
             ))}
           </Swiper>

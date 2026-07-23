@@ -168,14 +168,14 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
                     </Link>
                   </div>
                 </div>
-                <div className="col-10">
+                <div className="col-10 relative">
+                  <div className="absolute -top-10 -right-16 w-full h-full border-2 border-primary opacity-30"></div>
                   <ImageFallback
-                    className="banner-img opacity-0"
+                    className="banner-img opacity-0 relative"
                     src={bannerData.image}
                     width={1170}
                     height={666}
                     priority={true}
-                    alt=""
                   />
                 </div>
               </div>
