@@ -30,6 +30,9 @@ features:
       content:
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id
         diam ornare volutpat in sagitis, aliquet. Arcu cursus
+      link:
+        label: Shop now
+        href: /shop
     - icon: wind
       title: Magnetic Turning
       content:
