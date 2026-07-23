@@ -3,13 +3,13 @@ layout: "homepage"
 url: /adult
 shortbanner:
   image: "/images/flower.jpg"
-  title: Adult Stories
-  content: Explore our collection of adult letter stories, perfect for grown-up readers looking for engaging narratives.
+  title: Wise Words
+  content: Rediscover the art of slow communication. Premium stationery, archival kits, and curated letter-writing prompts for adults. Perfect for grown-up readers looking for engaging narratives.
   link:
-    label: Explore Adult Stories
+    label: Explore Wise Words
     href: /adult
 banner:
-  title: Adult Stories
+  title: Wise Words
   image: /images/banner-image.png
   link:
     label: Shop now
@@ -152,5 +152,3 @@ testimonial:
         Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta
         arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
 ---
-
-Adult Stories Content

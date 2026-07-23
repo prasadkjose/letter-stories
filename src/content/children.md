@@ -3,13 +3,13 @@ layout: "homepage"
 url: /children
 shortbanner:
   image: "/images/flower.jpg"
-  title: Children Stories
-  content: Discover our magical collection of children's letter stories, filled with adventure and imagination for young readers.
+  title: Little Dreamers
+  content: Discover our magical collection of children's letter stories, filled with adventure and imagination for young readers. Ignite imagination with illustrated pen-pals, treasure maps, and letters from fairytale worlds. Crafted for children aged 5-12.
   link:
-    label: Explore Children Stories
+    label: Explore Little Dreamers
     href: /children
 banner:
-  title: Children Stories
+  title: Little Dreamers
   image: /images/banner-image.png
   link:
     label: Shop now
