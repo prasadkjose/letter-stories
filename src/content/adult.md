@@ -4,6 +4,8 @@ url: /adult
 shortbanner:
   image: "/images/flower.jpg"
   title: Wise Words
+  subtitle: For the Intentional
+  icon: feather
   content: Rediscover the art of slow communication. Premium stationery, archival kits, and curated letter-writing prompts for adults. Perfect for grown-up readers looking for engaging narratives.
   link:
     label: Explore Wise Words

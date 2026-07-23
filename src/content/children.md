@@ -4,6 +4,8 @@ url: /children
 shortbanner:
   image: "/images/flower.jpg"
   title: Little Dreamers
+  subtitle: For the Curious
+  icon: star
   content: Discover our magical collection of children's letter stories, filled with adventure and imagination for young readers. Ignite imagination with illustrated pen-pals, treasure maps, and letters from fairytale worlds. Crafted for children aged 5-12.
   link:
     label: Explore Little Dreamers
