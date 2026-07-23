@@ -32,44 +32,59 @@ brands:
 
 #features
 features:
-  sub_title: SPECIAL FEATURES
-  title: Elements To </br> Get You Started
+  sub_title: Our Featured Stories
+  title: Illustrated Collections
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
     egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.
   list:
-    - icon: lock
-      title: Updated Security
+    - image: "/images/children-sq.png"
+      title: Story 1
       content:
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id
         diam ornare volutpat in sagitis, aliquet. Arcu cursus
       link:
-        label: Shop now
-        href: /shop
-    - icon: wind
-      title: Magnetic Turning
+        label: Buy now
+        href: /shop/1
+    - image: "/images/children-sq.png"
+      title: Story 1
       content:
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id
         diam ornare volutpat in sagitis, aliquet. Arcu cursus
-    - icon: shield
-      title: Secured & up-to-date
+      link:
+        label: Buy now
+        href: /shop/1
+    - image: "/images/children-sq.png"
+      title: Story 1
       content:
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id
         diam ornare volutpat in sagitis, aliquet. Arcu cursus
-    - icon: link
-      title: Instant Link Sharing
+      link:
+        label: Buy now
+        href: /shop/1
+    - image: "/images/children-sq.png"
+      title: Story 1
       content:
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id
         diam ornare volutpat in sagitis, aliquet. Arcu cursus
-    - icon: lock
-      title: Updated Security
+      link:
+        label: Buy now
+        href: /shop/1
+    - image: "/images/children-sq.png"
+      title: Story 1
       content:
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id
         diam ornare volutpat in sagitis, aliquet. Arcu cursus
-    - icon: wind
-      title: Magnetic Turning
+      link:
+        label: Buy now
+        href: /shop/1
+    - image: "/images/children-sq.png"
+      title: Story 1
       content:
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id
         diam ornare volutpat in sagitis, aliquet. Arcu cursus
+      link:
+        label: Buy now
+        href: /shop/1
 
 #intro
 intro:
