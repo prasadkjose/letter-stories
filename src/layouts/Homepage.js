@@ -1,5 +1,5 @@
 import Cta from "@layouts/components/Cta";
-import Features from "@layouts/partials/Features";
+import QuickShop from "@layouts/partials/QuickShop";
 import HomeBanner from "@layouts/partials/HomeBanner";
 import ShortIntro from "@layouts/partials/ShortIntro";
 import SpecialFeatures from "@layouts/partials/SpecialFeatures";
@@ -12,7 +12,7 @@ const Homepage = ({ data }) => {
   return (
     <>
       <HomeBanner banner={banner} brands={brands} />
-      <Features features={features} />
+      <QuickShop features={features} />
       <ShortIntro intro={intro} />
       <SpecialFeatures speciality={speciality} />
       <Testimonial testimonial={testimonial} />

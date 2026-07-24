@@ -6,7 +6,7 @@ import { useRef } from "react";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const Features = ({ features }) => {
+const QuickShop = ({ features }) => {
   const paginationRef = useRef(null);
   return (
     <section className="section">
@@ -53,4 +53,4 @@ const Features = ({ features }) => {
   );
 };
 
-export default Features;
+export default QuickShop;
