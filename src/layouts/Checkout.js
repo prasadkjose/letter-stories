@@ -1,8 +1,7 @@
 import config from "@config/config.json";
 import Banner from "./components/Banner";
-import ImageFallback from "./components/ImageFallback";
 
-const Contact = ({ data }) => {
+const Checkout = ({ data }) => {
   const { frontmatter } = data;
   const { title } = frontmatter;
 
@@ -11,15 +10,8 @@ const Contact = ({ data }) => {
       <Banner title={title} />
       <div className="container">
         <div className="section row items-center justify-center">
-          <div className="animate lg:col-5">
-            <ImageFallback
-              className="mx-auto lg:pr-10"
-              src="/images/vectors/contact.png"
-              width={497}
-              height={397}
-              alt=""
-            />
-          </div>
+          <div className="animate lg:col-5"></div>
+
           <div className="animate lg:col-5">
             <form
               method="POST"
@@ -95,4 +87,4 @@ const Contact = ({ data }) => {
   );
 };
 
-export default Contact;
+export default Checkout;

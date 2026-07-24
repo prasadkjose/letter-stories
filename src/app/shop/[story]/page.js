@@ -1,5 +1,5 @@
 import GSAPWrapper from "@layouts/components/GSAPWrapper";
-import Contact from "@layouts/Contact";
+import Checkout from "@layouts/Checkout";
 import SeoMeta from "@layouts/partials/SeoMeta";
 import { getListPage } from "@lib/contentParser";
 
@@ -28,10 +28,9 @@ const StoryPage = async props => {
   return (
     <GSAPWrapper>
       <SeoMeta title={title} />
-      <Contact
+      <Checkout
         data={{
-          frontmatter: { title },
-          content: storyData?.content || "",
+          frontmatter: { ...storyData },
         }}
       />
     </GSAPWrapper>
