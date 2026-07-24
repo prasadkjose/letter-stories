@@ -44,7 +44,7 @@ features:
         diam ornare volutpat in sagitis, aliquet. Arcu cursus
       link:
         label: Buy now
-        href: /shop/1
+        href: /shop/story_1
     - image: "/images/adults-sq.png"
       title: Story 1
       content:
@@ -52,7 +52,8 @@ features:
         diam ornare volutpat in sagitis, aliquet. Arcu cursus
       link:
         label: Buy now
-        href: /shop/1
+        href: /shop/story_1
+
     - image: "/images/adults-sq.png"
       title: Story 1
       content:
@@ -60,7 +61,8 @@ features:
         diam ornare volutpat in sagitis, aliquet. Arcu cursus
       link:
         label: Buy now
-        href: /shop/1
+        href: /shop/story_1
+
     - image: "/images/adults-sq.png"
       title: Story 1
       content:
@@ -68,7 +70,8 @@ features:
         diam ornare volutpat in sagitis, aliquet. Arcu cursus
       link:
         label: Buy now
-        href: /shop/1
+        href: /shop/story_1
+
     - image: "/images/adults-sq.png"
       title: Story 1
       content:
@@ -76,7 +79,8 @@ features:
         diam ornare volutpat in sagitis, aliquet. Arcu cursus
       link:
         label: Buy now
-        href: /shop/1
+        href: /shop/story_1
+
     - image: "/images/adults-sq.png"
       title: Story 1
       content:
@@ -84,7 +88,8 @@ features:
         diam ornare volutpat in sagitis, aliquet. Arcu cursus
       link:
         label: Buy now
-        href: /shop/1
+        href: /shop/story_1
+
 #intro
 intro:
   title: Built Exclusively For You
